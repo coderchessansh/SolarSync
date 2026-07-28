@@ -259,4 +259,46 @@ section h2{
     font-size:34px;
 }
 
+/* JS Animations */
+
+.hidden{
+    opacity:0;
+    transform:translateY(60px);
+    transition:.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+#progress{
+    position:fixed;
+    top:0;
+    left:0;
+    width:0%;
+    height:5px;
+    background:linear-gradient(90deg,#18a558,#00d4ff);
+    z-index:9999;
+}
+
+.particle{
+    position:fixed;
+    top:-40px;
+    pointer-events:none;
+    animation:floatSun linear infinite;
+    opacity:.25;
+    z-index:-1;
+}
+
+@keyframes floatSun{
+
+    from{
+        transform:translateY(-50px) rotate(0deg);
+    }
+
+    to{
+        transform:translateY(110vh) rotate(360deg);
+    }
+
 }
