@@ -1,178 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SolarSync | Harness. Store. Power.</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SolarSync — a rural solar-powered phone charging kit designed to store clean solar energy and provide phone charging during limited electricity or power cuts.">
+  <title>SolarSync | Rural Solar-Powered Charging Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<nav>
-
-<h2>SolarSync</h2>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#works">How It Works</a></li>
-<li><a href="#benefits">Benefits</a></li>
-<li><a href="#team">Team</a></li>
-
-</ul>
-
-</nav>
-
-<section id="home" class="hero">
-
-<div class="hero-text">
-
-<h1>Harness. Store. Power.</h1>
-
-<p>
-
-SolarSync is a portable solar-powered charging system
-that captures sunlight, stores it in a battery,
-and powers your devices anytime.
-
-</p>
-
-<a href="#about" class="btn">Explore Project</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="images/project.png" alt="SolarSync">
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2>About SolarSync</h2>
-
-<p>
-
-SolarSync is a sustainable solution designed to provide
-electricity where conventional power is unavailable.
-A solar panel captures sunlight, a charge controller
-stores the energy safely inside a rechargeable battery,
-and users can charge phones and USB devices whenever needed.
-
-</p>
-
-</section>
-
-<section id="works">
-
-<h2>How It Works</h2>
-
-<div class="steps">
-
-<div class="card">
-
-☀️
-
-<h3>1. Capture</h3>
-
-<p>Solar Panel absorbs sunlight.</p>
-
-</div>
-
-<div class="card">
-
-⚙️
-
-<h3>2. Control</h3>
-
-<p>Charge Controller regulates power.</p>
-
-</div>
-
-<div class="card">
-
-🔋
-
-<h3>3. Store</h3>
-
-<p>Battery stores solar energy.</p>
-
-</div>
-
-<div class="card">
-
-📱
-
-<h3>4. Charge</h3>
-
-<p>USB output charges phones.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="benefits">
-
-<h2>Benefits</h2>
-
-<div class="benefits">
-
-<div>🌱 Eco Friendly</div>
-<div>🔋 Portable</div>
-<div>⚡ Renewable Energy</div>
-<div>📱 Phone Charging</div>
-<div>💰 Cost Effective</div>
-<div>🌍 Sustainable</div>
-
-</div>
-
-</section>
-
-<section id="team">
-
-<h2>Our Team</h2>
-
-<h3>SolarSync</h3>
-
-<p>
-
-ODM Public School
-
-</p>
-
-<p>
-
-Small innovation today.
-Brighter tomorrow for all.
-
-</p>
-
-</section>
-
-<footer>
-
-<p>
-
-© 2026 SolarSync
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <div class="progress" id="progress"></div>
+
+  <nav class="nav">
+    <a class="brand" href="#home" aria-label="SolarSync home">
+      <img src="logo.svg" alt="SolarSync logo">
+      <span>Solar<span>Sync</span></span>
+    </a>
+    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#works">How it works</a>
+      <a href="#impact">Impact</a>
+      <a href="#project">The project</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="sun-glow"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> ODM Public School · Social Entrepreneurship</div>
+        <h1>Power that starts<br><em>with sunlight.</em></h1>
+        <p class="lead">A rural solar-powered phone charging kit that captures sunlight, stores the energy in a rechargeable battery, and makes charging available when electricity isn't.</p>
+        <div class="actions">
+          <a class="button primary" href="#works">See how it works <b>↓</b></a>
+          <a class="button secondary" href="#about">Why we built it</a>
+        </div>
+      </div>
+      <div class="hero-product reveal">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="product-card">
+          <img src="logo.svg" alt="SolarSync" class="product-logo">
+          <div class="panel-art"><div class="panel-grid"></div><div class="panel-leg"></div></div>
+          <div class="energy-line"></div>
+          <div class="battery"><div class="battery-top"></div><div class="battery-fill"></div><strong>STORED</strong><small>SOLAR ENERGY</small></div>
+          <div class="usb-dot">USB</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="section-label">01 / ABOUT THE PROJECT</div>
+      <div class="two-col">
+        <h2>Simple technology.<br><span>Useful where it matters.</span></h2>
+        <div>
+          <p>SolarSync is a portable charging system created to address a practical problem: phone charging can become difficult when electricity is limited or unavailable.</p>
+          <p>Our kit uses a solar panel, charge controller, rechargeable battery and USB output. Sunlight becomes stored electrical energy that can be used later to charge a phone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="works section" id="works">
+      <div class="section-label">02 / HOW IT WORKS</div>
+      <h2 class="center-title">From sunlight to a <span>charged phone.</span></h2>
+      <div class="flow">
+        <article class="flow-card reveal"><div class="number">01</div><div class="icon sun-icon">☀</div><h3>Capture</h3><p>The solar panel converts sunlight into electrical energy.</p></article>
+        <div class="arrow">→</div>
+        <article class="flow-card reveal"><div class="number">02</div><div class="icon">↕</div><h3>Control</h3><p>A charge controller regulates the power going into the battery.</p></article>
+        <div class="arrow">→</div>
+        <article class="flow-card reveal"><div class="number">03</div><div class="icon">▣</div><h3>Store</h3><p>The rechargeable battery stores the energy for later use.</p></article>
+        <div class="arrow">→</div>
+        <article class="flow-card reveal"><div class="number">04</div><div class="icon">⚡</div><h3>Charge</h3><p>The USB output delivers power to a phone or compatible device.</p></article>
+      </div>
+    </section>
+
+    <section class="impact section" id="impact">
+      <div class="impact-copy reveal">
+        <div class="section-label light">03 / SOCIAL IMPACT</div>
+        <h2>Designed for places where <span>every charge counts.</span></h2>
+        <p>Our idea is about more than a battery. Reliable phone charging can help people stay connected with family, access information, and communicate during power cuts or emergencies.</p>
+      </div>
+      <div class="impact-grid">
+        <div><strong>☀</strong><h3>Renewable</h3><p>Uses sunlight instead of relying only on conventional electricity.</p></div>
+        <div><strong>↗</strong><h3>Accessible</h3><p>A practical concept for rural and low-electricity environments.</p></div>
+        <div><strong>↻</strong><h3>Reusable</h3><p>Stores energy so charging is possible even after sunlight is gone.</p></div>
+        <div><strong>+</strong><h3>Portable</h3><p>Can be moved and used where charging is needed.</p></div>
+      </div>
+    </section>
+
+    <section class="project section" id="project">
+      <div class="section-label">04 / OUR PROJECT</div>
+      <div class="project-box reveal">
+        <div>
+          <img src="logo.svg" alt="SolarSync logo" class="large-logo">
+          <p class="mini-label">RURAL SOLAR-POWERED PHONE CHARGING KIT</p>
+          <h2>Small innovation.<br><span>Brighter tomorrow.</span></h2>
+          <p>SolarSync is our Social Entrepreneurship project from ODM Public School, focused on turning an everyday renewable resource into a useful charging solution.</p>
+        </div>
+        <div class="specs">
+          <div><span>ENERGY SOURCE</span><strong>Solar</strong></div>
+          <div><span>STORAGE</span><strong>Rechargeable battery</strong></div>
+          <div><span>OUTPUT</span><strong>USB charging</strong></div>
+          <div><span>FOCUS</span><strong>Rural communities</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand footer-brand"><img src="logo.svg" alt=""> <span>Solar<span>Sync</span></span></div><p>ODM Public School · Social Entrepreneurship Project</p><small>© 2026 SolarSync</small></footer>
+  <script src="script.js"></script>
 </body>
 </html>
