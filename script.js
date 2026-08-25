@@ -18,15 +18,15 @@ const observer=new IntersectionObserver(entries=>{
 
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
-const card=document.querySelector('.product-card');
-if(card && window.matchMedia('(pointer:fine)').matches){
-  card.addEventListener('mousemove',e=>{
-    const r=card.getBoundingClientRect();
+const modelCard=document.querySelector('.real-model-card');
+if(modelCard && window.matchMedia('(pointer:fine)').matches){
+  modelCard.addEventListener('mousemove',e=>{
+    const r=modelCard.getBoundingClientRect();
     const x=(e.clientX-r.left)/r.width-.5;
     const y=(e.clientY-r.top)/r.height-.5;
-    card.style.transform=`rotateX(${y*-5}deg) rotateY(${x*7}deg) rotate(2deg)`;
+    modelCard.style.transform=`perspective(900px) rotateX(${y*-3}deg) rotateY(${x*5}deg) rotate(1.5deg) translateY(-4px)`;
   });
-  card.addEventListener('mouseleave',()=>card.style.transform='rotate(2deg)');
+  modelCard.addEventListener('mouseleave',()=>modelCard.style.transform='rotate(1.5deg)');
 }
 
-console.log('%cSolarSync — Power that starts with sunlight.','color:#13a85a;font-size:18px;font-weight:bold');
+console.log('%cSolarSync — Real prototype. Real sunlight. Real impact.','color:#13a85a;font-size:18px;font-weight:bold');
