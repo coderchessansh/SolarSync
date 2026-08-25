@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SolarSync — a rural solar-powered phone charging kit designed to store clean solar energy and provide phone charging during limited electricity or power cuts.">
-  <title>SolarSync | Rural Solar-Powered Charging Kit</title>
+  <meta name="description" content="SolarSync — a rural solar-powered phone charging kit that stores clean solar energy and provides 5V USB charging.">
+  <title>SolarSync | Solar-Powered Phone Charging Kit</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -12,103 +12,71 @@
 </head>
 <body>
   <div class="progress" id="progress"></div>
-
   <nav class="nav">
-    <a class="brand" href="#home" aria-label="SolarSync home">
-      <img src="logo.svg" alt="SolarSync logo">
-      <span>Solar<span>Sync</span></span>
-    </a>
+    <a class="brand" href="#home" aria-label="SolarSync home"><img src="logo.svg" alt="SolarSync logo"><span>Solar<span>Sync</span></span></a>
     <button class="menu" id="menu" aria-label="Open menu">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#works">How it works</a>
-      <a href="#impact">Impact</a>
-      <a href="#project">The project</a>
-    </div>
+    <div class="nav-links" id="navLinks"><a href="#about">About</a><a href="#works">How it works</a><a href="#model">Our model</a><a href="#impact">Impact</a></div>
   </nav>
-
   <main>
     <section class="hero" id="home">
       <div class="sun-glow"></div>
       <div class="hero-copy reveal">
         <div class="eyebrow"><span></span> ODM Public School · Social Entrepreneurship</div>
         <h1>Power that starts<br><em>with sunlight.</em></h1>
-        <p class="lead">A rural solar-powered phone charging kit that captures sunlight, stores the energy in a rechargeable battery, and makes charging available when electricity isn't.</p>
-        <div class="actions">
-          <a class="button primary" href="#works">See how it works <b>↓</b></a>
-          <a class="button secondary" href="#about">Why we built it</a>
-        </div>
+        <p class="lead">SolarSync is a real, portable solar-powered phone charging kit. It captures sunlight, stores the energy in an 18650 battery, and delivers a 5V USB output when charging is needed.</p>
+        <div class="actions"><a class="button primary" href="#model">See our real model <b>↓</b></a><a class="button secondary" href="#works">How it works</a></div>
+        <div class="hero-specs"><div><strong>6V / 3W</strong><span>Solar panel</span></div><div><strong>3.7V</strong><span>18650 storage</span></div><div><strong>5V USB</strong><span>Phone output</span></div></div>
       </div>
       <div class="hero-product reveal">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="product-card">
-          <img src="logo.svg" alt="SolarSync" class="product-logo">
-          <div class="panel-art"><div class="panel-grid"></div><div class="panel-leg"></div></div>
-          <div class="energy-line"></div>
-          <div class="battery"><div class="battery-top"></div><div class="battery-fill"></div><strong>STORED</strong><small>SOLAR ENERGY</small></div>
-          <div class="usb-dot">USB</div>
-        </div>
+        <figure class="real-model-card">
+          <div class="model-badge"><span></span> WORKING PROTOTYPE</div>
+          <img src="assets/solarsync-model.jpg" alt="SolarSync solar-powered phone charging prototype with solar panel, battery, charge controller and USB output">
+          <figcaption><strong>SolarSync prototype</strong><span>Our actual model shown in the project poster</span></figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="intro section" id="about">
       <div class="section-label">01 / ABOUT THE PROJECT</div>
-      <div class="two-col">
-        <h2>Simple technology.<br><span>Useful where it matters.</span></h2>
-        <div>
-          <p>SolarSync is a portable charging system created to address a practical problem: phone charging can become difficult when electricity is limited or unavailable.</p>
-          <p>Our kit uses a solar panel, charge controller, rechargeable battery and USB output. Sunlight becomes stored electrical energy that can be used later to charge a phone.</p>
-        </div>
-      </div>
+      <div class="two-col"><h2>Simple technology.<br><span>Useful where it matters.</span></h2><div><p>SolarSync addresses a practical problem: phone charging can become difficult in rural areas, during power cuts, or anywhere reliable electricity is unavailable.</p><p>The kit combines a solar panel, TP4056 charge controller, rechargeable 18650 battery, MT3608 boost converter and USB output in a compact stand-mounted setup.</p></div></div>
     </section>
 
     <section class="works section" id="works">
       <div class="section-label">02 / HOW IT WORKS</div>
       <h2 class="center-title">From sunlight to a <span>charged phone.</span></h2>
       <div class="flow">
-        <article class="flow-card reveal"><div class="number">01</div><div class="icon sun-icon">☀</div><h3>Capture</h3><p>The solar panel converts sunlight into electrical energy.</p></article>
-        <div class="arrow">→</div>
-        <article class="flow-card reveal"><div class="number">02</div><div class="icon">↕</div><h3>Control</h3><p>A charge controller regulates the power going into the battery.</p></article>
-        <div class="arrow">→</div>
-        <article class="flow-card reveal"><div class="number">03</div><div class="icon">▣</div><h3>Store</h3><p>The rechargeable battery stores the energy for later use.</p></article>
-        <div class="arrow">→</div>
-        <article class="flow-card reveal"><div class="number">04</div><div class="icon">⚡</div><h3>Charge</h3><p>The USB output delivers power to a phone or compatible device.</p></article>
+        <article class="flow-card reveal"><div class="number">01</div><div class="icon sun-icon">☀</div><h3>Capture</h3><p>The 6V / 3W solar panel converts sunlight into electrical energy.</p></article><div class="arrow">→</div>
+        <article class="flow-card reveal"><div class="number">02</div><div class="icon">↕</div><h3>Control</h3><p>The TP4056 charge controller manages charging of the rechargeable battery.</p></article><div class="arrow">→</div>
+        <article class="flow-card reveal"><div class="number">03</div><div class="icon">▣</div><h3>Store</h3><p>The 3.7V 18650 battery stores energy so it can be used later.</p></article><div class="arrow">→</div>
+        <article class="flow-card reveal"><div class="number">04</div><div class="icon">⚡</div><h3>Boost &amp; charge</h3><p>The MT3608 raises the battery voltage to a 5V USB output for charging.</p></article>
+      </div>
+    </section>
+
+    <section class="model section" id="model">
+      <div class="section-label">03 / OUR REAL MODEL</div>
+      <div class="model-layout">
+        <div class="model-photo-wrap reveal"><div class="photo-topline"><span>FIELD PROTOTYPE</span><span>SolarSync / 01</span></div><img src="assets/solarsync-model.jpg" alt="Close-up of the SolarSync solar-powered phone charging model"></div>
+        <div class="model-copy reveal"><p class="mini-label">BUILT FROM THE PROJECT DESIGN</p><h2>This is the <span>SolarSync</span> we built.</h2><p>The website now uses the actual physical model shown in our project material instead of a made-up illustration. The panel sits on a simple stand while the battery, charging electronics and USB output are mounted on the base.</p>
+          <div class="component-list">
+            <div><b>01</b><span><strong>Solar panel</strong>6V / 3W</span></div><div><b>02</b><span><strong>Charge controller</strong>TP4056</span></div><div><b>03</b><span><strong>Battery</strong>18650 Li-ion · 3.7V</span></div><div><b>04</b><span><strong>Boost converter</strong>MT3608 · 3.7V → 5V</span></div><div><b>05</b><span><strong>Output</strong>USB · 5V</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="impact section" id="impact">
-      <div class="impact-copy reveal">
-        <div class="section-label light">03 / SOCIAL IMPACT</div>
-        <h2>Designed for places where <span>every charge counts.</span></h2>
-        <p>Our idea is about more than a battery. Reliable phone charging can help people stay connected with family, access information, and communicate during power cuts or emergencies.</p>
-      </div>
-      <div class="impact-grid">
-        <div><strong>☀</strong><h3>Renewable</h3><p>Uses sunlight instead of relying only on conventional electricity.</p></div>
-        <div><strong>↗</strong><h3>Accessible</h3><p>A practical concept for rural and low-electricity environments.</p></div>
-        <div><strong>↻</strong><h3>Reusable</h3><p>Stores energy so charging is possible even after sunlight is gone.</p></div>
-        <div><strong>+</strong><h3>Portable</h3><p>Can be moved and used where charging is needed.</p></div>
-      </div>
+      <div class="impact-copy reveal"><div class="section-label light">04 / SOCIAL IMPACT</div><h2>Designed for places where <span>every charge counts.</span></h2><p>Reliable phone charging can help people stay connected with family, access information, and communicate during power cuts or emergencies.</p></div>
+      <div class="impact-grid"><div><strong>☀</strong><h3>Renewable</h3><p>Uses sunlight instead of relying only on conventional electricity.</p></div><div><strong>↗</strong><h3>Accessible</h3><p>A practical concept for rural and low-electricity environments.</p></div><div><strong>↻</strong><h3>Reusable</h3><p>Stores energy so charging is possible even after sunlight is gone.</p></div><div><strong>+</strong><h3>Portable</h3><p>Can be moved and used where charging is needed.</p></div></div>
     </section>
 
     <section class="project section" id="project">
-      <div class="section-label">04 / OUR PROJECT</div>
-      <div class="project-box reveal">
-        <div>
-          <img src="logo.svg" alt="SolarSync logo" class="large-logo">
-          <p class="mini-label">RURAL SOLAR-POWERED PHONE CHARGING KIT</p>
-          <h2>Small innovation.<br><span>Brighter tomorrow.</span></h2>
-          <p>SolarSync is our Social Entrepreneurship project from ODM Public School, focused on turning an everyday renewable resource into a useful charging solution.</p>
-        </div>
-        <div class="specs">
-          <div><span>ENERGY SOURCE</span><strong>Solar</strong></div>
-          <div><span>STORAGE</span><strong>Rechargeable battery</strong></div>
-          <div><span>OUTPUT</span><strong>USB charging</strong></div>
-          <div><span>FOCUS</span><strong>Rural communities</strong></div>
-        </div>
+      <div class="section-label">05 / SOLARSYNC</div>
+      <div class="project-box reveal"><div><img src="logo.svg" alt="SolarSync logo" class="large-logo"><p class="mini-label">RURAL SOLAR-POWERED PHONE CHARGING KIT</p><h2>Small innovation.<br><span>Brighter tomorrow.</span></h2><p>SolarSync is our Social Entrepreneurship project from ODM Public School, focused on turning an everyday renewable resource into a useful charging solution.</p></div>
+        <div class="specs"><div><span>ENERGY SOURCE</span><strong>6V / 3W Solar</strong></div><div><span>STORAGE</span><strong>18650 · 3.7V</strong></div><div><span>CHARGE CONTROL</span><strong>TP4056</strong></div><div><span>OUTPUT</span><strong>5V USB</strong></div><div><span>BOOST</span><strong>MT3608</strong></div><div><span>FOCUS</span><strong>Rural charging</strong></div></div>
       </div>
     </section>
   </main>
-
   <footer><div class="brand footer-brand"><img src="logo.svg" alt=""> <span>Solar<span>Sync</span></span></div><p>ODM Public School · Social Entrepreneurship Project</p><small>© 2026 SolarSync</small></footer>
   <script src="script.js"></script>
 </body>
